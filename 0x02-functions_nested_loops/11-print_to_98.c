@@ -8,7 +8,7 @@ int main(void)
 {
 	int a;
 
-	a = add(89, 9);
+	a = 89 + 9;
 	printf("%d\n", a);
 	return (0);
 }
