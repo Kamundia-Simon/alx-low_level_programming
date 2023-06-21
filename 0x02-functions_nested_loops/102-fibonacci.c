@@ -7,10 +7,11 @@
 int main(void)
 {
 	long a = 1, b = 2;
-	int i;
 
 	for (int i = 0; i < 50; ++i)
 	{
+		int i;
+
 		if (i == 0)
 			printf("%ld", a);
 		else if (i == 1)
