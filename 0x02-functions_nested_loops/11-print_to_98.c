@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints numbers upto 89
- * Return: Always 0.
+ *print_to_98 - prints numbers upto 98
+ *@n: number to be printed.
  */
-int main(void)
+void print_to_98(int n)
 {
-	int a;
-
-	a = 89 + 9;
-	printf("%d\n", a);
-	return (0);
+	if (n <= 98)
+	{
+		while (n < 98)
+		{
+			printf("%d, ", n++);
+		}
+		printf("%d\n", n);
+	}
+	else
+	{
+		while (n >= 98)
+		while (n > 98)
+		{
+			printf("%d, ", n--);
+		}
+	}
 }
 
