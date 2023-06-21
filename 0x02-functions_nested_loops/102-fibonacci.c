@@ -6,12 +6,11 @@
   */
 int main(void)
 {
+	int i;
 	long a = 1, b = 2;
 
 	for (int i = 0; i < 50; ++i)
 	{
-		int i;
-
 		if (i == 0)
 			printf("%ld", a);
 		else if (i == 1)
