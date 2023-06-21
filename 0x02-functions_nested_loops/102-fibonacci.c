@@ -9,7 +9,7 @@ int main(void)
 	int i;
 	long a = 1, b = 2;
 
-	for (int i = 0; i < 50; ++i)
+	while (i < 50)
 	{
 		if (i == 0)
 			printf("%ld", a);
@@ -21,6 +21,8 @@ int main(void)
 			a = b - a;
 			printf(", %ld", b);
 		}
+
+		++i;
 	}
 	printf("\n");
 	return (0);
