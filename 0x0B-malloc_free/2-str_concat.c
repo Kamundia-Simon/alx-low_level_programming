@@ -3,16 +3,17 @@
 #include <stdio.h>
 
 /**
-  *str_concat - concatenate two string
-  *@s1: string 1
-  *@s2: string 2
-  *Return: NULL or pointer
+ *str_concat - concatenate two string
+ *@s1: string 1
+ *@s2: string 2
+ *Return: NULL or pointer
  */
 
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
-	int i, n, len = 0;
+	int i, n = 0;
+	int len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -29,3 +30,4 @@ char *str_concat(char *s1, char *s2)
 		str[n++] = s2[i];
 	return (str);
 }
+
