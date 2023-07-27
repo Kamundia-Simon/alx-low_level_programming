@@ -2,13 +2,13 @@
 #include "lists.h"
 
 /**
- *add_node -  function that adds a new node at the beginning
+ *add_node_end -  function that adds a new node at the beginning
  *@head: beginning
  *@str: string
  *Return: NULL or New node
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
 	char *str_copy;
