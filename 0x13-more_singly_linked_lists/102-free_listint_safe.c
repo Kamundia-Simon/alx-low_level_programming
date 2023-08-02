@@ -8,23 +8,22 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	size_t a = 0;
-	listint_t *head, *tmp;
-	long d;
+	unsigned int node = 0;
+	listint_t *tmp = *h, *temp;
 
-	if (!h)
+	if (tmp == 0 || h == 0)
 		return (0);
-	head = *h;
-	*h = NULL;
-	while (head)
+	tmp = *h;
+	while (tmp != 0)
 	{
-		a++;
-		d = head->next - head;
-		tmp = head;
-		free(tmp);
-		if (d >= 0)
+		temp = tmp;
+		tmp = tmp->next;
+		node++;
+
+		free(temp);
+		if (temp <= tmp)
 			break;
-		head = head->next;
 	}
-	return (a);
+	*h = 0;
+	return (node);
 }
