@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stddef.h>
 #include <stdio.h>
 
 /**
@@ -12,7 +11,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *s;
 	const listint_t *f;
-	size_t node = 1;
+	size_t node = 0;
 
 	s = head;
 	if (s == 0)
