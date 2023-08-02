@@ -10,8 +10,8 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *s = head;
-	const listint_t *f = head;
+	const listint_t *s;
+	const listint_t *f;
 	size_t node = 1;
 
 	s = head;
