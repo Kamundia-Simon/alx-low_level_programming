@@ -91,8 +91,8 @@ int main(int argc, char *argv[])
 	} while (o > 0);
 
 	free(buffer);
-	close(m);
-	close(t);
+	_close(m);
+	_close(t);
 
 	return (0);
 }
