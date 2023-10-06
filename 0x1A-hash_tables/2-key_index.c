@@ -2,7 +2,7 @@
 
 /**
  * key_index - Get index at which a key should be stored
- * @key: key to get index 
+ * @key: key to get index
  * @size: size of array
  * Return: index of key
  */
